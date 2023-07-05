@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITLE -->
+    <title>Caculator Application</title>
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+
+    <!-- BOXICON LINK -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- GOOGLE FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- CALCULATOR CONTAINER -->
+    <div class="container">
+
+        <div class="calculator">
+
+            <!-- MAIN INPUT, OUTPUT AND MENU SECTION -->
+            <div class="text-and-menu-section" data-text-menu-box>
+
+                <!-- HEADER -->
+                <div class="header">
+
+                    <!-- SIDEBAR MENU ICON -->
+                    <!-- <div class="menu-icon icon" data-menu-togger>
+                        <i class='bx bx-menu'></i>
+                    </div> -->
+
+                    <!-- SIDEBAR MENU -->
+                    <div class="sidebar-menu" data-sidebar>
+
+                        <!-- MENU HEADER TOP -->
+                        <div class="header-top">
+
+                            <i class='bx bx-menu-alt-left' data-menu-togger></i>
+
+                            <div class="title-text">
+                                <h3 class="title">Calculator</h3>
+                            </div>
+
+                        </div>
+
+                        <!-- MENU LIST -->
+                        <ul class="menu-list">
+
+                            <!-- MENU ITEM -->
+                            <li class="list-item">
+                                <i class='bx bx-calculator'></i>
+                                <h3 class="itemtext">Standard</h3>
+                            </li>
+
+                            <!-- MENU ITEM -->
+                            <li class="list-item">
+                                <i class='bx bx-credit-card'></i>
+                                <h3 class="itemtext">Currancy</h3>
+                            </li>
+
+                            <!-- MENU ITEM -->
+                            <li class="list-item">
+                                <i class='bx bx-user'></i>
+                                <h3 class="itemtext">Age</h3>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- HISTORY ICON -->
+                    <div class="history-icon history" data-history-btn>
+                        <i class='bx bx-history'></i>
+                    </div>
+
+                </div>
+
+                <!-- HISTORY SECTION -->
+
+                <ul class="history-list" data-history-list>
+                </ul>
+
+
+                <!-- INPUT OUTPUT SECTION -->
+                <div class="input-output-text-box">
+
+                    <!-- INPUT -->
+                    <div class="input-section">
+                        <input type="text" class="input" readonly data-input-text>
+                    </div>
+
+                    <!-- OUTPUT -->
+                    <div class="output-section">
+                        <input type="text" class="output" readonly data-output-text>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- BUTTONS SECTION -->
+            <div class="buttons-section">
+
+                <!-- OPTION BUTTONS -->
+                <table class="more-btn-section">
+
+                    <tr>
+                        <td><button class="btn" id="root" value="">&radic;</button></td>
+                        <td><button class="btn" id="pi" value="">π</button></td>
+                        <td><button class="btn" id="square" value="">x²</button></td>
+                        <td><button class="btn" id="cube" value="">x³</button></td>
+                        <td><button class="menu-option-btn" value="" data-option-btn><i
+                                    class='bx bx-chevron-down'></i></button></td>
+                    </tr>
+
+                    <tr class="btn-row" data-option-menu>
+                        <td><button class="btn" id="sin" value="">sin</button></td>
+                        <td><button class="btn" id="cos" value="">cos</button></td>
+                        <td><button class="btn" id="tan" value="">tan</button></td>
+                        <td><button class="btn" id="(" value="(">(</button></td>
+                        <td><button class="btn" id=")" value=")">)</button></td>
+                    </tr>
+
+                </table>
+
+                <!-- MAIN BUTTONS -->
+                <table class="main-btn-section">
+
+                    <tr>
+                        <td><button class="btn clear-btn" id="clear" value="">AC</button></td>
+                        <td><button class="btn btn-oprator" id="backspace" value=""><i
+                                    class='bx bxs-tag-x'></i></button></td>
+                        <td><button class="btn btn-oprator" id="%" value=" % ">%</button></td>
+                        <td><button class="btn btn-oprator" id="÷" value=" / ">÷</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="btn" id="7" value="7">7</button></td>
+                        <td><button class="btn" id="8" value="8">8</button></td>
+                        <td><button class="btn" id="9" value="9">9</button></td>
+                        <td><button class="btn btn-oprator" id="*" value=" * ">x</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="btn" id="4" value="4">4</button></td>
+                        <td><button class="btn" id="5" value="5">5</button></td>
+                        <td><button class="btn" id="6" value="6">6</button></td>
+                        <td><button class="btn btn-oprator" id="-" value=" - ">-</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="btn" id="1" value="1">1</button></td>
+                        <td><button class="btn" id="2" value="2">2</button></td>
+                        <td><button class="btn" id="3" value="3">3</button></td>
+                        <td><button class="btn btn-oprator" id="+" value=" + ">+</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="btn" id="00" value="00">00</button></td>
+                        <td><button class="btn" id="0" value="0">0</button></td>
+                        <td><button class="btn" id="." value=".">.</button></td>
+                        <td><button class="btn equal-btn" id="=" value="">=</button></td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+
+            <!-- OVERLAY -->
+            <div class="overlay" data-overlay></div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- JAVASCRIPT LINK -->
+    <script src="./Assets/Js/script.js"></script>
+
+</body>
+
+</html>

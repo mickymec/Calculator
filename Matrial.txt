@@ -1,0 +1,32 @@
+BOXICCON LINK :
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	BOXICON :
+	<i class='bx bx-menu'></i>
+	<i class='bx bx-history'></i>
+	<i class='bx bx-chevron-down'></i>
+	<i class='bx bxs-tag-x'></i>
+	<i class='bx bx-user'></i>
+	<i class='bx bx-credit-card'></i>
+	<i class='bx bx-calculator'></i>
+	
+	
+
+GOOGLE FONT LINK :
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+SPECIFY
+	COLOR :
+	--background-color: #111111;
+	--textBox-button: #191919;
+	--text-icon: #FAFAFA;
+	--button-bg: #BB5CFF;
+	--clearbtn-input: #5D5A59;
+
+	FONT :
+	--ff: 'Roboto', sans-serif;
+	
+		
